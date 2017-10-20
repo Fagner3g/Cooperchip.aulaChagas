@@ -1,0 +1,16 @@
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\obj\Debug\02-Cooperchip.aulaChagas.Dados.csprojResolveAssemblyReference.cache
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\obj\Debug\02-Cooperchip.aulaChagas.Dados.csproj.CoreCompileInputs.cache
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\Cooperchip.aulaChagas.Dados.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\Cooperchip.aulaChagas.Dados.pdb
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\obj\Debug\Cooperchip.aulaChagas.Dados.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\obj\Debug\Cooperchip.aulaChagas.Dados.pdb
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\Cooperchip.aulaChagas.Dados.dll.config
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\EntityFramework.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\EntityFramework.xml
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\Cooperchip.aulaChagas.Entidades.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\Cooperchip.aulaChagas.Entidades.pdb
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\bin\Debug\Cooperchip.aulaChagas.Entidades.dll.config
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\obj\Debug\Cooperchip.aulaChagas.Dados.Migrations.AlteracaoDeContextoNoProjetoDados.resources
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Dados\obj\Debug\02-Cooperchip.aulaChagas.Dados.csproj.GenerateResource.Cache

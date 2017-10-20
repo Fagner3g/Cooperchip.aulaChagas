@@ -1,0 +1,11 @@
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\Cooperchip.aulaChagas.Entidades.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\Cooperchip.aulaChagas.Entidades.pdb
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\obj\Debug\01-Cooperchip.aulaChagas.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\obj\Debug\01-Cooperchip.aulaChagas.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\obj\Debug\Cooperchip.aulaChagas.Entidades.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\obj\Debug\Cooperchip.aulaChagas.Entidades.pdb
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\Cooperchip.aulaChagas.Entidades.dll.config
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\EntityFramework.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\EntityFramework.xml
+C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Entidades\bin\Debug\EntityFramework.SqlServer.xml

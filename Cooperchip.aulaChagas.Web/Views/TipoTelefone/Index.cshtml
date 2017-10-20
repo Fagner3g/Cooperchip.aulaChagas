@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Cooperchip.aulaChagas.Dados.Modelos.TipoTelefone>
+
+@{
+    ViewBag.Title = "Tipo Telefone";
+}
+
+
+<p>
+    @Html.ActionLink("Adicionar", "Create", "TipoTelefone", null, new { @class="btn btn-default" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", null, new { id = item.TipoTelefoneId }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Details", "Details", null, new { id = item.TipoTelefoneId }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TipoTelefoneId }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,25 @@
+﻿@model Cooperchip.aulaChagas.Dados.Modelos.Cliente
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes do Cliente</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", "Cliente", new { id = Model.ClienteId }, new { @class="btn btn-default" }) |
+    @Html.ActionLink("Voltar", "Index", "Cliente", null, new { @class="btn btn-primary" })
+</p>
