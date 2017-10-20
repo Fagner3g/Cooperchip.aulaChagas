@@ -28,5 +28,7 @@ namespace Cooperchip.aulaChagas.Web
 
         [StringLength(20)]
         public string uf { get; set; }
+
+        public int teste { get; set; }
     }
 }
