@@ -1,21 +1,16 @@
 ﻿using Cooperchip.aulaChagas.Dados.Modelos;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Cooperchip.aulaChagas.Dados.Contexto
 {
     public class DadosContext : DbContext
     {
         public DadosContext()
-            : base("DefaultConnection")
+            : base("CoperchipDB")
         {
 
         }
-
 
         public DbSet<Cliente> Clientes { get; set; }
 

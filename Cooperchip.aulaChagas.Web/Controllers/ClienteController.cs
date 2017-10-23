@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using Cooperchip.aulaChagas.Dados.Modelos;
-using Cooperchip.aulaChagas.Web.Models;
-using Cooperchip.aulaChagas.Web.Filtros;
 using Cooperchip.aulaChagas.Dados.Contexto;
 
 namespace Cooperchip.aulaChagas.Web.Controllers
 {
-    [Authorize(Roles="admin")]
+
     public class ClienteController : Controller
     {
         private DadosContext db = new DadosContext();

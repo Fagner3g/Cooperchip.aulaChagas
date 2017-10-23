@@ -1,9 +1,10 @@
 ﻿@model Cooperchip.aulaChagas.Dados.Modelos.Telefone
 
 @{
-    ViewBag.Title = "Novo Telefone";
+    ViewBag.Title = "Adicionar";
 }
 
+<h2>Adicionar</h2>
 
 
 @using (Html.BeginForm()) 
@@ -11,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h2>Novo Telefone</h2>
+        <h4>Telefone</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -31,15 +32,23 @@
         </div>
 
         <div class="form-group">
+            @Html.LabelFor(model => model.idTipoTelefone, "idTipoTelefone", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("idTipoTelefone", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.idTipoTelefone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Novo" class="btn btn-default" />
+                <input type="submit" value="Adicionar" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Voltar", "Index", "Telefone", null, new { @class="btn btn-primary" })
+    @Html.ActionLink("Voltar", "Index", null, null, new { @class = "btn btn-primary" })
 </div>
 
 @section Scripts {

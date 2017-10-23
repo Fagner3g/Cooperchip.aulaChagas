@@ -6,9 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using Cooperchip.aulaChagas.Dados.Modelos;
-using Cooperchip.aulaChagas.Web.Models;
 using Cooperchip.aulaChagas.Dados.Contexto;
+using Cooperchip.aulaChagas.Dados.Modelos;
 
 namespace Cooperchip.aulaChagas.Web.Controllers
 {
@@ -19,7 +18,8 @@ namespace Cooperchip.aulaChagas.Web.Controllers
         // GET: Telefone
         public ActionResult Index()
         {
-            return View(db.Telefone.ToList());
+            var telefone = db.Telefone.Include(t => t.TipoTelefone);
+            return View(telefone.ToList());
         }
 
         // GET: Telefone/Details/5
@@ -40,6 +40,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
         // GET: Telefone/Create
         public ActionResult Create()
         {
+            ViewBag.idTipoTelefone = new SelectList(db.TipoTelefone, "TipoTelefoneId", "Descricao");
             return View();
         }
 
@@ -48,7 +49,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "TelefoneId,DDD,Numero")] Telefone telefone)
+        public ActionResult Create([Bind(Include = "TelefoneId,DDD,Numero,idTipoTelefone")] Telefone telefone)
         {
             if (ModelState.IsValid)
             {
@@ -57,6 +58,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.idTipoTelefone = new SelectList(db.TipoTelefone, "TipoTelefoneId", "Descricao", telefone.idTipoTelefone);
             return View(telefone);
         }
 
@@ -72,6 +74,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.idTipoTelefone = new SelectList(db.TipoTelefone, "TipoTelefoneId", "Descricao", telefone.idTipoTelefone);
             return View(telefone);
         }
 
@@ -80,7 +83,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "TelefoneId,DDD,Numero")] Telefone telefone)
+        public ActionResult Edit([Bind(Include = "TelefoneId,DDD,Numero,idTipoTelefone")] Telefone telefone)
         {
             if (ModelState.IsValid)
             {
@@ -88,6 +91,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.idTipoTelefone = new SelectList(db.TipoTelefone, "TipoTelefoneId", "Descricao", telefone.idTipoTelefone);
             return View(telefone);
         }
 

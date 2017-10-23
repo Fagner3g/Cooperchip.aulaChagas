@@ -4,17 +4,15 @@
     ViewBag.Title = "Tipo Telefone";
 }
 
+<h2>Tipo Telefone</h2>
 
 <p>
-    @Html.ActionLink("Adicionar", "Create", "TipoTelefone", null, new { @class="btn btn-default" })
+    @Html.ActionLink("Adicionar", "Create", "TipoTelefone", null, new { @class = "btn btn-default" })
 </p>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Descricao)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Data)
         </th>
         <th></th>
     </tr>
@@ -25,12 +23,9 @@
             @Html.DisplayFor(modelItem => item.Descricao)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Data)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", null, new { id = item.TipoTelefoneId }, new { @class = "btn btn-primary" }) |
-            @Html.ActionLink("Details", "Details", null, new { id = item.TipoTelefoneId }, new { @class = "btn btn-default" }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.TipoTelefoneId }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Editar", "Edit", null, new { id=item.TipoTelefoneId }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Details", "Details", null, new { id=item.TipoTelefoneId }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("Delete", "Delete",null, new { id=item.TipoTelefoneId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

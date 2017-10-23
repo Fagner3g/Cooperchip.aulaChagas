@@ -17,7 +17,5 @@ namespace Cooperchip.aulaChagas.Dados.Modelos
         [MinLength(2, ErrorMessage = "Mínimo de caracter permitido: 2")]
         public string Descricao { get; set; }
 
-        [DataType(DataType.DateTime, ErrorMessage = "Data inválida.")]
-        public DateTime Data { get; set; }
     }
 }

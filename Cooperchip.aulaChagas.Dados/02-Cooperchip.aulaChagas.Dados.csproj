@@ -48,27 +48,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\DadosContext.cs" />
-    <Compile Include="Migrations\201710201315193_AlteracaoDeContextoNoProjetoDados.cs" />
-    <Compile Include="Migrations\201710201315193_AlteracaoDeContextoNoProjetoDados.Designer.cs">
-      <DependentUpon>201710201315193_AlteracaoDeContextoNoProjetoDados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cooperchip.aulaChagas.Entidades\01-Cooperchip.aulaChagas.Entidades.csproj">
       <Project>{05E63B19-D963-4454-8A14-AC7E26773B5D}</Project>
       <Name>01-Cooperchip.aulaChagas.Entidades</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710201315193_AlteracaoDeContextoNoProjetoDados.resx">
-      <DependentUpon>201710201315193_AlteracaoDeContextoNoProjetoDados.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -109,6 +109,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -205,27 +206,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710191305128_InitialCreate.cs" />
-    <Compile Include="Migrations\201710191305128_InitialCreate.Designer.cs">
-      <DependentUpon>201710191305128_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201710231055580_InitialCreate.cs" />
+    <Compile Include="Migrations\201710231055580_InitialCreate.Designer.cs">
+      <DependentUpon>201710231055580_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710191436398_TelEtpTel.cs" />
-    <Compile Include="Migrations\201710191436398_TelEtpTel.Designer.cs">
-      <DependentUpon>201710191436398_TelEtpTel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710201241391_AlteracaoDeContexto.cs" />
-    <Compile Include="Migrations\201710201241391_AlteracaoDeContexto.Designer.cs">
-      <DependentUpon>201710201241391_AlteracaoDeContexto.cs</DependentUpon>
+    <Compile Include="Migrations\201710231111061_AlteracaoDeContexto.cs" />
+    <Compile Include="Migrations\201710231111061_AlteracaoDeContexto.Designer.cs">
+      <DependentUpon>201710231111061_AlteracaoDeContexto.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="tbCliente.cs" />
-    <Compile Include="tbProduto.cs" />
-    <Compile Include="tbTipoProduto.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -247,6 +246,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -339,14 +342,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710191305128_InitialCreate.resx">
-      <DependentUpon>201710191305128_InitialCreate.cs</DependentUpon>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710231055580_InitialCreate.resx">
+      <DependentUpon>201710231055580_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710191436398_TelEtpTel.resx">
-      <DependentUpon>201710191436398_TelEtpTel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710201241391_AlteracaoDeContexto.resx">
-      <DependentUpon>201710201241391_AlteracaoDeContexto.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710231111061_AlteracaoDeContexto.resx">
+      <DependentUpon>201710231111061_AlteracaoDeContexto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

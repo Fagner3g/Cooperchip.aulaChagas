@@ -1,16 +1,19 @@
 ﻿@model IEnumerable<Cooperchip.aulaChagas.Dados.Modelos.Telefone>
 
 @{
-    ViewBag.Title = "Telefones";
+    ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Adicionar", "Create", "Telefone", null, new { @class="btn btn-default" })
+    @Html.ActionLink("Adicionar", "Create", null, null, new { @class = "btn btn-primary" })
 </p>
 <table class="table">
     <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoTelefone.Descricao)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.DDD)
         </th>
@@ -23,15 +26,18 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.TipoTelefone.Descricao)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.DDD)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Numero)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", null, new { id = item.TelefoneId }, new { @class = "btn btn-primary" }) |
-            @Html.ActionLink("Details", "Details", null, new { id = item.TelefoneId }, new { @class = "btn btn-default" }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.TelefoneId }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Editar", "Edit", null, new { id=item.TelefoneId }, new { @class="btn btn-primary" }) |
+            @Html.ActionLink("Detalhes", "Details", null, new { id=item.TelefoneId }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("Excluir", "Delete", null, new { id=item.TelefoneId }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

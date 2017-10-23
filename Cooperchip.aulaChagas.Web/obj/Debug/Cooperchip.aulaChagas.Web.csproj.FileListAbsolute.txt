@@ -146,5 +146,4 @@ C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\C
 C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Web\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Web\obj\Debug\Cooperchip.aulaChagas.Web.Migrations.InitialCreate.resources
 C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Web\obj\Debug\Cooperchip.aulaChagas.Web.csproj.GenerateResource.Cache
-C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Web\obj\Debug\Cooperchip.aulaChagas.Web.Migrations.TelEtpTel.resources
 C:\Users\fagner.gomes\Documents\DESENVOLVIMENTO\PROJETOS\Cooperchip.aulaChagas\Cooperchip.aulaChagas.Web\obj\Debug\Cooperchip.aulaChagas.Web.Migrations.AlteracaoDeContexto.resources

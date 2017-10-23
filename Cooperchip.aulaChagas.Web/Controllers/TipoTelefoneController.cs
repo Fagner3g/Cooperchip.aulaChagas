@@ -1,9 +1,13 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Web;
 using System.Web.Mvc;
-using Cooperchip.aulaChagas.Dados.Modelos;
 using Cooperchip.aulaChagas.Dados.Contexto;
+using Cooperchip.aulaChagas.Dados.Modelos;
 
 namespace Cooperchip.aulaChagas.Web.Controllers
 {
@@ -43,7 +47,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "TipoTelefoneId,Descricao,Data")] TipoTelefone tipoTelefone)
+        public ActionResult Create([Bind(Include = "TipoTelefoneId,Descricao")] TipoTelefone tipoTelefone)
         {
             if (ModelState.IsValid)
             {
@@ -75,7 +79,7 @@ namespace Cooperchip.aulaChagas.Web.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "TipoTelefoneId,Descricao,Data")] TipoTelefone tipoTelefone)
+        public ActionResult Edit([Bind(Include = "TipoTelefoneId,Descricao")] TipoTelefone tipoTelefone)
         {
             if (ModelState.IsValid)
             {
